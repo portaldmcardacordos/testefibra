@@ -1,122 +1,50 @@
-<!DOCTYPE html><html><head>
-  <style>
-    body {
-      background-color: #051C43;
-      font-family: "Lato", sans-serif;
-    }
+<html><head>
+<title>FasterNet</title>
 
-    .preload {
-      border: 8px solid #e8e3e3;
-      border-top: 8px solid #051C43;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-top: -30px;
-      margin-left: -30px;
-      animation: spin 1s linear infinite;
-      -webkit-animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-      }
-    }
-
-    @-webkit-keyframes spin {
-      0% {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-      }
-    }
-
-
-    .grecaptcha-badge {
-      visibility: hidden;
-    }
-  </style>
-  
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <title>Fibralink | Desbloqueio e Boleto/Pix Fácil</title>
-
-  <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
-  <meta name="viewport" content="width=device-width">
-
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Fatura Digital Fibralink">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#051C43">
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Fatura Digital Fibralink">
-
-  <meta name="icon" sizes="16x16" content="icons/Icon-16.png">
-  <meta name="icon" sizes="32x32" content="icons/Icon-32.png">
-  <meta name="icon" sizes="192x192" content="icons/Icon-192.png">
-  <meta name="icon" sizes="512x512" content="icons/Icon-512.png">
-  <meta name="theme-color" content="#051C43">
-
-  <meta name="title" content="Fatura Digital Fibralink">
-  <meta name="description" content="Visualize suas faturas disponíveis e desbloqueia sua internet, de maneira rápida e descomplicada.">
-  <meta name="image" content="/icons/Icon-192.png">
-
-  <meta property="og:image" content="images/Icon-192.png">
-  <meta property="og:description" content="Visualize suas faturas disponíveis e desbloqueia sua internet, de maneira rápida e descomplicada.">
-  <meta property="og:title" content="Fatura Digital Fibralink">
-  <meta property="og:url" content="https://boletos.fibralink.net.br">
-  <meta property="og:type" content="website">
-
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <link rel="manifest" href="/manifest.json">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">
-
-  <script>
-    const serviceWorkerVersion = "445691095";
-  </script>
-
-  <script src="js/api.js"></script>
-
-  <script src="js/flutter.js" defer></script>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<link rel="stylesheet" href="css/fasternetadm.css" type="text/css">
 </head>
 
-<body>
-  <div class="preload" id="preload" style="display: block;"></div>
-  <script>
-    window.addEventListener("load", function (ev) {
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function (engineInitializer) {
-          engineInitializer.initializeEngine().then(function (appRunner) {
-            appRunner.runApp();
-            document.getElementById("preload").setAttribute("style", "display: none;")
-          });
-        },
-      });
-    });
-  </script>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<script>function botaodireito() {if (event.button==2) {alert('Função desativada.')}} document.onmousedown=botaodireito</script>
+
+<script>
+function botaoteclado()
+{
+	if (event.keyCode==9)
+	{
+		//alert('Função desativada.')
+		//return false;
+	}
+
+	if (event.keyCode==93)
+	{
+		alert('Função desativada.')
+		return false;
+	}
+}
+document.onkeydown=botaoteclado
+</script>
 
 
+<iframe id="empresa" style="Z-INDEX:0;
+      WIDTH: 100%;
+      HEIGHT: 100%;
+      POSITION: relative;
+          LEFT: 0x;
+          RIGHT: 0px" border="0" name="news" framespacing="0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" src="boletoresp.asp" frameborder="0"><span class="texto"><br>
+<br>
+<b>ATENÇÃO</b><br>
+O seu navegador<br>
+necessita ser<br>
+atualizado, para<br>
+exibir esta<br>
+página.<br>
+Procure uma nova<br>
+versão do<br>
+seu navegador<br>
+clicando <a href="http://www.webstandards.org/upgrade" target="_new" color="#666666"><b><font color="#990000">aqui</font></b></a>
+.</span></iframe>
 </body></html>
